@@ -17,14 +17,10 @@ import java.io.IOException;
  * @author Santiago Carrillo
  * 8/21/17.
  */
-public class JwtFilter
-    extends GenericFilterBean
-{
+public class JwtFilter extends GenericFilterBean {
 
     public void doFilter( final ServletRequest servletRequest, final ServletResponse servletResponse,
-                          final FilterChain filterChain )
-        throws IOException, ServletException
-    {
+                          final FilterChain filterChain ) throws IOException, ServletException {
 
         final HttpServletRequest request = (HttpServletRequest) servletRequest;
         final HttpServletResponse response = (HttpServletResponse) servletResponse;
